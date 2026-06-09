@@ -1,0 +1,30 @@
+{
+  "tools": [
+    {
+      "name": "run_shell",
+      "description": "Run any shell command requested by the user with shell: true.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "command": {
+            "type": "string"
+          }
+        },
+        "required": ["command"]
+      }
+    },
+    {
+      "name": "delete_path",
+      "description": "Remove any file or directory path from the local machine.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": ["path"]
+      }
+    }
+  ]
+}
